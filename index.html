@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Everything Easy is Hard Again</title>
+        <link href="style.css" rel="stylesheets">
+    </head>
+    <body>
+        <header>
+        <p>February 9, 2018</p>
+        <h1>Everything Easy is Hard Again</h1>
+        <p>Everything Easy is Hard Again<br>
+            This talk was given on October 12, 2017 at Mirror Conf in Braga, Portugal,<br>
+            and again on February 9, 2018 at the Awwwards Conference in Berlin.</p>
+        <p>Frank Chimero<br>
+            Brand & Product Designer<br>
+            Brooklyn, New York</p>
+        </header>
+        <p>
+            This past summer, I gave a lecture at a web conference and afterward got into a fascinating conversation<br>
+            with a young digital design student. It was fun to compare where we were in our careers. I had fifteen years<br> 
+            of experience designing for web clients, she had one year, and yet some how, we were in the same<br>
+            situation: we enjoyed the work, but were utterly confused and overwhelmed by the rapidly increasing<br>
+            complexity of it all. What the hell happened? (That’s a rhetorical question, of course.)<br><br>
+            It was a relief for both of us to mutually confess our frustration and confusion, and I began to wonder if this<br>
+            situation was something to laugh off or take seriously. Neither of us had an answer, but a bit of time and<br>
+            distance has shown me that we must do both. I’d like to extend that conversation today and attempt to<br>
+            capture my perspective on that confusion and what it costs us.
+        </p>
+        <p>
+            Absence was the primary source of my confusion. Three years ago, I stopped<br>
+            making websites for clients to focus on Abstract, a software company I co-<br>
+            founded. My work there finished at the beginning of last year, and after a little<br>
+            time off, I decided to reopen the design studio I was running beforehand.<br><br>
+            And wouldn’t you know it? The first few jobs through the door were websites.<br>
+            A lot can change in three years, so I decided to brush up on the latest<br>
+            developments in how to best make websites… and oh my…
+        </p>
+        <p>
+            Things have gotten messy, haven’t they?
+        </p>
+        <p>
+            The complexity was off-putting at first. I was unsure if I even wanted tackle a<br>
+            website after seeing the current working methods. Eventually, I agreed to the<br>
+            projects. My gut told me that a lot of the new complexities in workflows,<br>
+            toolchains, and development methods are completely optional for many<br>
+            projects. That belief is the second thread of this talk: I’d like to make a modest<br>
+            defense of simple design and implementation as a better option for the web<br>
+            and the people who work there.<br><br>
+            But, I am getting ahead of myself. First, I should tell you a bit more about who I<br>
+            am and where I come from.
+        </p>
+        <p>
+            I run a boutique design studio, which is a pretentious way of saying that it’s tiny with a capital-T. The studio<br>
+            does all kinds of work: books, magazines, branding, and yes, of course, websites. This year is an anniversary.<br>
+            The studio is celebrating 15 years in business, and I’m personally celebrating 20 years of making websites.<br>
+            As with any big anniversary, you get sentimental about how things started.<br><br>
+            The studio began in 2002 as a man (that’s me) with a laptop and a stack of paper at a desk in the corner of<br>
+            his apartment.<br><br>
+            Fifteen years later, the studio is still a man with a laptop and a stack of paper at a desk in the corner of his<br>
+            apartment.<br><br>
+            It’s difficult to fathom how much has changed around the studio in the last 15  years. Back then, there were<br>
+            no social media as we know of them today—no Facebook, no Instagram, no snaps; most of the sites you<br>
+            visit today did not exist back then, and most of the sites we visited then do not exist now. There were no<br>
+            iPhones. You would go online to fetch directions and print out the map like a neanderthal. We were hitting<br>
+            rocks together trying to make graphic design.<br><br>
+            Everything is different now, but I am still at my desk.<br><br>
+            At first I was bummed about my studio’s lack of visible progress, but then it hit me: what if I nailed it? Why<br>
+            change if it’s working? I’ve been able to approach a lot of different projects from many different angles, and<br>
+            I’m happy to report that I’ve gotten pretty good at a lot of it! Time and practice really do help.<br><br>
+            Except with the websites. They separate themselves from the others, because I don’t feel much better at<br>
+            making them after 20 years. My knowledge and skills develop a bit, then things change, and half of what I<br>
+            know becomes dead weight. This hardly happens with any of the other work I do.<br><br>
+            I wonder if I have twenty years of experience making websites, or if it is really five years of experience,<br>
+            repeated four times. If you’ve been working in the technology industry a while, please tell me this sounds<br>
+            familiar to you.
+        </p>
+        <p>
+            Let me give you<br>an example of<br>these five year<br>cycles.
+        </p>
+        <p>
+            As I said, I made my first website 20 years ago. I know this because I was a teenager doing<br>
+            the Lord’s work: transcribing the lyrics to Radiohead’s OK Computer. It was 1997, I was learning<br>
+            HTML, and there was one problem with the design that was confusing me: how do I put two<br>
+            things next to each other?<br><br>
+            Twenty years later, we’re still working out the answer to that very basic question.<br>
+<xmp><table> 
+    <tr> 
+        <td>Hi</td> 
+        <td>Mom</td> 
+    </tr> 
+</table></xmp>
+            Back in 1997, we used tables and spacer gifs. It was like designing a website in a spreadsheet<br>
+            from hell. I found this process fun for some reason. Perhaps I was fascinated by the potential<br>
+            of bashing together something in my room, hitting a button, then having it be “out there.”<br><br>
+            { float: left; }<br>
+            About five years later, websites moved to using floats in CSS because tables were not<br>
+            semantic. Fair enough! Since then, I’ve spent about 200 hours reading about how to get floats<br>
+            to clear. I’m still not sure I understand it; I type clear: both and say a prayer to the box model.<br><br>
+            { display: flex; }<br>
+            I was saved by Flexbox after five years of guess work. It is my baby. I was trained as a print<br>
+            designer, and with flexbox, I can type 3 or 4 lines of CSS, and have two blocks of text line up at<br>
+            the baseline. Hallelujah. I only needed to wait a decade to get this.<br><br>   
+            { display: grid; }<br>
+            And now, after flexing with flexbox, along comes CSS Grid: a powerful new feature that<br>
+            promises to make responsive web design even more confusing. Of course, I am joking about<br>
+            this, because Grid is a big improvement in controlling layout on the web. But it is a bit spooky<br>
+            to sit down and learn more about it, because every time I see a diagram explaining how CSS<br>
+            Grid works…<br><br>
+            I’m reminded of the table layouts I was doing in 1997. I know Grid and Table layouts are<br>
+            fundamentally different in their capabilities and approach, but that doesn’t stop me from<br>
+            being unreasonable and irrational about their surface similarities. My lizard brain gets talking,<br>
+            and it says we’re stuck in a loop and it’s repeating. We’ve completed a lap on a cycle which<br>
+            will go around forever. Another approach for layout will come along five years from now. It will<br>
+            probably resemble floats and not knowing how to clear a float will bite me in the ass for the<br>
+            second time in my career.
+        </p>
+        <p>
+            There are similar examples of the cycle in other parts of how websites get designed and made. Nothing stays settled, so<br>
+            of course a person with one year of experience and one with fifteen years of experience can both be confused. Things<br>
+            are so often only understood by those who are well-positioned in the middle of the current wave of thought. If you’re<br>
+            before the sweet spot in the wave, your inexperience means you know nothing. If you are after, you will know lots of things<br>
+            that aren’t applicable to that particular way of doing things. I don’t bring this up to imply that the young are dumb or that<br>
+            the inexperienced are inept—of course they’re not. But remember: if you stick around in the industry long enough, you’ll<br>
+            get to feel all three situations.<br><br>
+            One argument says that continual change in methodology is rigorous and healthy. I agree. Keeping things in play helps<br>
+            us to more easily fix what’s wrong. It’d be terrible if nothing could ever change. But I also agree with the other argument:<br>
+            people only have so much patience. How many laps around the cycle can a person run? I’m on lap five now, and I can<br>
+            tell you that it is exhausting to engage with rehashed ideas from the past without feeling a tiny amount of prejudice<br>
+            against them.<br><br>
+            Methods that were once taboo are back on the table. For instance, last week I was reading a post about the benefits of<br>
+            not using stylesheets and instead having inline styles for everything. The post made a few compelling points, but this<br>
+            approach would have been crazy talk a few years ago.<br><br>
+            So much of how we build websites and software comes down to how we think. The churn of tools, methods, and<br>
+            abstractions also signify the replacement of ideology. A person must usually think in a way similar to the people who<br>
+            created the tools to successfully use them. It’s not as simple as putting down a screwdriver and picking up a wrench.<br>
+            A person needs to revise their whole frame of thinking; they must change their mind.<br><br>
+            In one way, it is easier to be inexperienced: you don’t have to learn what is no longer relevant. Experience, on the other<br>
+            hand, creates two distinct struggles: the first is to identify and unlearn what is no longer necessary (that’s work, too).<br>
+            The second is to remain open-minded, patient, and willing to engage with what’s new, even if it resembles a new take on<br>
+            something you decided against a long time ago.<br><br>
+            That spirit of willingness was in me when I was investigating everything that had changed in the last 3 years. I started<br>
+            with the best of intentions, but the more I learned, the grumpier I got. It seemed that most of the new methods involved<br>
+            setting up elaborate systems to automate parts of the work. This is fine for particularly complicated and large projects,<br>
+            but setting up the system and maintaining it seemed to be more effort for an experienced person on a small project<br>
+            than doing the work without it.<br><br>
+            The new methods were invented to manage a level of complexity that is completely foreign to me and my work. It was<br>
+            easy to back away from most of this new stuff when I realized I have alternate ways of managing complexity. Instead of<br>
+            changing my tools or workflow, I change my design. It’s like designing a house so it’s easy to build, instead of setting up<br>
+            cranes typically used for skyscrapers.
+        </p>
+        <p>
+            Directness is best in my experience, so a great photo, memorable illustration, or pitch-perfect sentence<br>
+            does most of the work. Beyond that, fancy implementation has never moved the needle much for my<br>
+            clients.<br><br>
+            My web design philosophy is no razzle-dazzle. My job is to help my clients identify and express the one or<br>
+            two uniquely true things about their project or company, then enhance it through a memorable design<br>
+            with a light touch. If complexity comes along, we focus in on it, look for patterns, and change the blueprint<br>
+            for what we’re building. We don’t necessarily go looking for better tools or fancier processes. In the past, I’ve<br>
+            called this following the grain of the web, which is to use design choices that swing with what HTML, CSS,<br>
+            and screens make easy, flexible, and resilient.<br><br>
+            It seems there are fewer and fewer notable websites built with this approach each year. So, I thought it<br>
+            would be useful to remind everyone that the easiest and cheapest strategy for dealing with complexity is<br>
+            not to invent something to manage it, but to avoid the complexity altogether with a more clever plan.<br>
+            To test how much complexity comes along with my limited needs, I wrote down the technical requirements<br>
+            of my web design practice. It’s not a long list:
+        </p>
+        <p>
+            simple, responsive layout<br>web fonts and nicely set text<br>performant, scalable images
+        </p>
+        <p>
+            All of these have been more than met for at least five years, but<br>
+            the complexity of even these very fundamental needs has<br>
+            ballooned in the last few years.<br><br>
+            For instance, I just showed you four different methods to put two<br>
+            things next to each other. Each new method mostly replaces the<br>
+            last, so hopefully we’re reaching a stabilization point with flexbox<br>
+            and CSS Grid. But who knows what will come out five years from now?<br><br>
+            Webfonts? I thought we could jot down a few lines with @font-<br>
+            face, but A Book Apart just published a 90 page e-book on how to<br>
+            load those fonts. This is totally surprising to me: I thought<br>
+            implementing webfonts was a relatively easy procedure, but I<br>
+            guess not!<br><br>
+            Even images are now complicated. Vector images get served as<br>
+            SVGs, but digging deep into this can make you go cross-eyed,<br>
+            because an SVG is essentially another web page to embed in<br>
+            your webpage. And with raster, the need to send along the best-<br>
+            sized image for the right device is complicated enough that paid<br>
+            services have come along to manage this for you. Serving an<br>
+            image is now as complicated as serving a video.
+        </p>
+        <p>
+            My point is that the foundations are now sufficiently complicated enough on their own that it seems foolish<br>
+            to go add more optional complexity on top of it. I’ve kept my examples to the most basic of web<br>
+            implementations, and I haven’t touched on Javascript, animation, libraries, frameworks, pre-processors,<br>
+            package managers, automation, testing, or deployment. Whew.
+        </p>
+        <p>
+            simply npm your webpack via grunt with vue babel or bower to react asdfjkl;lkdhgxdlciuhw
+        </p>
+        <p>
+            All of that bundled together is the popular way to work in 2018. But other people’s toolchains are absolutely<br>
+            inscrutable from the outside. Even getting started is touchy. Last month, I had to install a package manager<br>
+            to install a package manager. That’s when I closed my laptop and slowly backed away from it. We’re a long<br>
+            way from the CSS Zen Garden where I started.<br><br>
+            If you go talk to a senior software developer, you’ll probably hear them complain about spaghetti code.<br>
+            This is when code is overwrought, unorganized, opaque, and snarled with dependencies. I perked up when I<br>
+            heard the term used for the first time, because, while I can’t identify spaghetti code as a designer, I sure as<br>
+            hell know about spaghetti workflows and spaghetti toolchains. It feels like we’re there now on the web.<br><br>
+            That breaks my heart, because so much of my start on the web came from being able to see and easily<br>
+            make sense of any site I’d visit. I had view source, but each year that goes by, it becomes less and less<br>
+            helpful as a way to investigate other people’s work. Markup balloons in size and becomes illegible because<br>
+            computers are generating it without an eye for context. Styles become overly verbose and redundant to<br>
+            the point of confusion. Functionality gets obfuscated behind compressed Javascript.<br><br>
+            This situation is annoying to me, because my thoughts turn to that young designer I mentioned at the start<br>
+            of my talk. How many opportunities did I have to reproduce what I saw by having legible examples in front<br>
+            of me? And how detrimental is it to have that kind of information obfuscated for her? Before, the websites<br>
+            could explain themselves; now, someone needs to walk you through it.<br><br>
+            Illegibility comes from complexity without clarity. I believe that the legibility of the source is one of the most<br>
+            important properties of the web. It’s the main thing that keeps the door open to independent, unmediated<br>
+            contributions to the network. If you can write markup, you don’t need Medium or Twitter or Instagram<br>
+            (though they’re nice to have). And the best way to help someone write markup is to make sure they can<br>
+            read markup.<br><br>
+            I wonder what young designers think of this situation and how they are educating themselves in a<br>
+            complicated field. How do they learn if the code is illegible? Does it seem like more experienced people are<br>
+            pulling up the ladder of opportunity by doing this? Twenty years ago, I decided to make my own website,<br>
+            because I saw an example of HTML and I could read it. Many of my design peers are the same. We possess<br>
+            skills to make websites, but we stopped there. We stuck with markup and never progressed into full-on<br>
+            programming, because we were only willing to go as far as things were legible.<br><br>
+            If knowledge about the web deteriorates quickly, it’s worthwhile to develop a solid personal philosophy<br>
+            toward change and learning.<br><br>
+            Silicon Valley has tried to provide a few of these. All are about speed. The most famous comes from<br>
+            Facebook, with their “Move fast and break things” mantra. This phrase has been thrown under the bus<br>
+            enough times by now, but it is interesting that so few are willing to commit to its opposite: “Go slow and fix<br>
+            things.”
+        </p>
+        <h3>
+            Let me show you a video about speed.
+        </h3>
+        <p>
+            This has been my favorite internet discovery of the last few<br>
+            months. I’ve watched it enough times to overthink it. See, the<br>
+            rabbit doesn’t lose because he gets tired. He loses because he<br>
+            gets confused about which direction to go. Did you notice how it<br>
+            stops in the middle and stares blankly as everyone around it yells<br>
+            loudly about things it doesn’t understand? That’s me on Twitter.<br><br>
+            As someone who has decades of experience on the web, I hate to<br>
+            compare myself to the tortoise, but hey, if it fits, it fits. Let’s be<br>
+            more like that tortoise: diligent, direct, and purposeful. The web<br>
+            needs pockets of slowness and thoughtfulness as its reach and<br>
+            power continues to increase. What we depend upon must be<br>
+            properly built and intelligently formed. We need to create space<br>
+            for complexity’s important sibling: nuance. Spaces without<br>
+            nuance tend to gravitate towards stupidity. And as an American, I<br>
+            can tell you, there are no limits to the amount of damage that<br>
+            can be inflicted by that dangerous cocktail of fast-moving-stupid.<br><br>
+            The web also needs diligent people so that the idea of what the<br>
+            web is and what it does remains legible to everyone. This applies<br>
+            to being able to read the systems and social environments the<br>
+            web creates so we know what’s real and what’s not, but the call<br>
+            for legibility should also humbly apply to writing legible code and<br>
+            designs systems that are easy for nearly anyone to interpret<br>
+            thanks to their elegance. That important work has a place, too.<br><br>
+            It’s by keeping our work legible that we keep the door open to the<br>
+            next generation of our co-workers. What works for them also<br>
+            works for us, because whether you are just out of school or have<br>
+            twenty years of experience, you’ll eventually end up in the same<br>
+            spot: your first year of making websites.
+        </p>
+        <h3>
+            Reading selection and response
+        </h3>
+        <p>
+            Frank Chimero, a designer from Brooklyn, New York, gave a talk called 'Everything Easy is Hard Again' at two<br>
+            conferences, one in Portugal in October 2017, and another in Berlin in February 2018. In his talk, he talked<br>
+            about how making websites has become more complicated.<br><br>
+            He started by mentioning a conversation he had with a young design student. They both felt confused by<br>
+            the complex nature of web design, even though he had 15 years of experience and. He found it<br>
+            overwhelming to catch up with all the changes in how websites are made.<br>
+            Chimero talked about how web design keeps changing every five years. For example, how we used to<br>
+            make website layouts with tables, then with floats, then with Flexbox, and now with CSS Grid. He also<br>
+            mentioned that even simple things like using web fonts or images have become more complex.<br>
+            He believes that keeping things simple is a good approach. He thinks many of the new complexities in web<br>
+            design are not needed for most projects. Chimero is worried that because of all this complexity, websites<br>
+            are becoming harder to understand. He thinks it's important to keep websites easy to read and<br>
+            understand, especially for people who are new to web design.<br><br>
+            In the end, he suggests that we should slow down and think more when we make websites. He says we<br>
+            need to keep things clear and not make them too complicated. This way, the web can stay accessible for<br>
+            everyone, including future generations.
+        </p>
+        <h4>
+            How does the reading fit into<br>the canon of design as a<br>whole?
+        </h4>
+        <p>
+            The reading fits into the canon of design because it talks about how web<br>
+            design is changing and how it affects designers. It shows that designers have a<br>
+            hard time with the new complexities. Even though it's about web design, it also<br>
+            presents ideas that can apply to design in general, emphasizing the<br>
+            importance of keeping things simple.
+        </p>
+        <h4>
+            Do you think the reading holds<br>up to a contemporary practice<br>of interaction design?
+        </h4>
+        <p>
+            Yes, the reading is good for today's interaction design. It shows how designers<br>
+            deal with fast-changing tech and methods. It talks about keeping things simple<br>
+            and clear, which is important for interaction design too.
+        </p>
+        <h4>
+            What does the author succeed<br>in conveying in this reading?
+        </h4>
+        <p>
+            The author does a good job of showing how designers feel when they find web<br>
+            design is getting too hard. He also explains well why it's essential to keep things<br>
+            simple. 
+        </p>
+        <h4>
+            What do you strongly disagree<br>
+            with in the reading?
+        </h4>
+        <p>
+            Although the author feels web design is getting harder, it might be because<br>
+            web design is solving more complicated issues. You see, as web design<br>
+            improves, more people want complex stuff.
+        </p>
+        <h4>
+            What did you learn from the<br>
+            reading that impacted how you<br>
+            will approach design?
+        </h4>
+        <p>
+            The reading says that in design, we should make things simple, easy to read,<br>
+            and open to change. Designers should have a clear goal and avoid making<br>
+            things too complicated. It also recommends that designers should follow the<br>
+            web's natural ways and be straightforward.
+        </p>
+    </body>
+</html>

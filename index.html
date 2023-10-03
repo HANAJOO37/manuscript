@@ -8,14 +8,16 @@
         <header>
         <p class="date">February 9, 2018</p>
         <h1>Everything<br><span id="easy">Easy</span> is<br><span id="hard">Hard</span> Again</h1>
-        <p id="left">Everything Easy is Hard Again<br>
+        <ul class="description">
+            <li id="left"><span class="bold">Everything Easy is Hard Again<br></span>
             This talk was given on October 12, 2017 at Mirror Conf in Braga, Portugal,<br>
-            and again on February 9, 2018 at the Awwwards Conference in Berlin.</p>
-        <p id="right">Frank Chimero<br>
+            and again on February 9, 2018 at the Awwwards Conference in Berlin.</li>
+            <li id="right"><span class="bold">Frank Chimero<br></span>
             Brand & Product Designer<br>
-            Brooklyn, New York</p>
+            Brooklyn, New York</li>
+        </ul>
         </header>
-        <p>
+        <p id="summer">
             This past summer, I gave a lecture at a web conference and afterward got into a fascinating conversation 
             with a young digital design student. It was fun to compare where we were in our careers. I had fifteen years 
             of experience designing for web clients, she had one year, and yet some how, we were in the same 
@@ -26,7 +28,7 @@
             distance has shown me that we must do both. I’d like to extend that conversation today and attempt to 
             capture my perspective on that confusion and what it costs us.
         </p>
-        <p>
+        <p id="absence">
             Absence was the primary source of my confusion. Three years ago, I stopped 
             making websites for clients to focus on Abstract, a software company I co-
             founded. My work there finished at the beginning of last year, and after a little 
@@ -38,7 +40,7 @@
         <p id="things">
             Things have gotten messy, haven’t they?
         </p>
-        <p>
+        <p id="complexity">
             The complexity was off-putting at first. I was unsure if I even wanted tackle a 
             website after seeing the current working methods. Eventually, I agreed to the 
             projects. My gut told me that a lot of the new complexities in workflows, 
@@ -49,7 +51,8 @@
             But, I am getting ahead of myself. First, I should tell you a bit more about who I 
             am and where I come from.
         </p>
-        <p class="orange">
+        <div class="orange">
+        <p class="center">
             I run a boutique design studio, which is a pretentious way of saying that it’s tiny with a capital-T. The studio 
             does all kinds of work: books, magazines, branding, and yes, of course, websites. This year is an anniversary. 
             The studio is celebrating 15 years in business, and I’m personally celebrating 20 years of making websites. 
@@ -73,23 +76,25 @@
             I wonder if I have twenty years of experience making websites, or if it is really five years of experience, 
             repeated four times. If you’ve been working in the technology industry a while, please tell me this sounds 
             familiar to you.
-        </p>
-        <p id="example">
-            Let me give you<br>an example of<br>these five year<br>cycles.
-        </p>
-        <p>
+        </p></div>
+        <table>
+            <tr>
+        <th id="example">
+            Let me give you an example of these five year cycles.
+        </th>
+        <th id="said">
             As I said, I made my first website 20 years ago. I know this because I was a teenager doing 
             the Lord’s work: transcribing the lyrics to Radiohead’s OK Computer. It was 1997, I was learning 
             HTML, and there was one problem with the design that was confusing me: how do I put two 
             things next to each other?<br><br>
-            Twenty years later, we’re still working out the answer to that very basic question. 
-<span class="tag"><xmp><table> 
-<xmp><table> 
-    <tr> 
-        <td>Hi</td> 
-        <td>Mom</td> 
-    </tr> 
-</table></xmp></span>
+            Twenty years later, we’re still working out the answer to that very basic question.<br><br>
+        <span class="tag">
+        &lt;table&gt;<br>
+        &nbsp;&lt;tr&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;Hi&lt;/td&gt;<br>
+        &nbsp;&nbsp;&lt;td&gt;Mom&lt;/td&gt;<br>
+        &nbsp;&lt;/tr&gt;<br>
+        &lt;/table&gt;</span><br><br>
             Back in 1997, we used tables and spacer gifs. It was like designing a website in a spreadsheet 
             from hell. I found this process fun for some reason. Perhaps I was fascinated by the potential 
             of bashing together something in my room, hitting a button, then having it be “out there.”<br><br>
@@ -102,20 +107,23 @@
             designer, and with flexbox, I can type 3 or 4 lines of CSS, and have two blocks of text line up at 
             the baseline. Hallelujah. I only needed to wait a decade to get this.<br><br>   
             <span class="tag">{ display: grid; }</span><br>
-            And now, after flexing with flexbox, along comes CSS Grid: a powerful new feature that<br>
-            promises to make responsive web design even more confusing. Of course, I am joking about<br>
-            this, because Grid is a big improvement in controlling layout on the web. But it is a bit spooky<br>
-            to sit down and learn more about it, because every time I see a diagram explaining how CSS<br>
+            And now, after flexing with flexbox, along comes CSS Grid: a powerful new feature that 
+            promises to make responsive web design even more confusing. Of course, I am joking about 
+            this, because Grid is a big improvement in controlling layout on the web. But it is a bit spooky 
+            to sit down and learn more about it, because every time I see a diagram explaining how CSS 
             Grid works…<br><br>
-            I’m reminded of the table layouts I was doing in 1997. I know Grid and Table layouts are<br>
-            fundamentally different in their capabilities and approach, but that doesn’t stop me from<br>
-            being unreasonable and irrational about their surface similarities. My lizard brain gets talking,<br>
-            and it says we’re stuck in a loop and it’s repeating. We’ve completed a lap on a cycle which<br>
-            will go around forever. Another approach for layout will come along five years from now. It will<br>
-            probably resemble floats and not knowing how to clear a float will bite me in the ass for the<br>
+            I’m reminded of the table layouts I was doing in 1997. I know Grid and Table layouts are 
+            fundamentally different in their capabilities and approach, but that doesn’t stop me from 
+            being unreasonable and irrational about their surface similarities. My lizard brain gets talking, 
+            and it says we’re stuck in a loop and it’s repeating. We’ve completed a lap on a cycle which 
+            will go around forever. Another approach for layout will come along five years from now. It will 
+            probably resemble floats and not knowing how to clear a float will bite me in the ass for the 
             second time in my career.
-        </p>
-        <p class="black">
+        </th>
+            </tr>
+        </table>
+        <div class="black">
+            <p id="similar">
             There are similar examples of the cycle in other parts of how websites get designed and made. Nothing stays settled, so 
             of course a person with one year of experience and one with fifteen years of experience can both be confused. Things 
             are so often only understood by those who are well-positioned in the middle of the current wave of thought. If you’re 
@@ -149,7 +157,8 @@
             changing my tools or workflow, I change my design. It’s like designing a house so it’s easy to build, instead of setting up 
             cranes typically used for skyscrapers.
         </p>
-        <p>
+        </div>
+        <p id="directness">
             Directness is best in my experience, so a great photo, memorable illustration, or pitch-perfect sentence 
             does most of the work. Beyond that, fancy implementation has never moved the needle much for my 
             clients.<br><br>
@@ -165,10 +174,12 @@
             To test how much complexity comes along with my limited needs, I wrote down the technical requirements 
             of my web design practice. It’s not a long list:
         </p>
-        <p id="simple">
-            simple, responsive layout<br>web fonts and nicely set text<br>performant, scalable images
-        </p>
-        <p>
+        <table id="seta">
+        <th id="first"></th>
+        <th id="simple">
+            simple, responsive layout web fonts and nicely set text performant, scalable images
+        </th>
+        <th id="all">
             All of these have been more than met for at least five years, but 
             the complexity of even these very fundamental needs has 
             ballooned in the last few years.<br><br>
@@ -188,15 +199,18 @@
             sized image for the right device is complicated enough that paid 
             services have come along to manage this for you. Serving an 
             image is now as complicated as serving a video.
-        </p>
-        <p class="orange">
+        </th>
+        </table>
+        <div class="orange">
+            <p class="center">
             My point is that the foundations are now sufficiently complicated enough on their own that it seems foolish 
             to go add more optional complexity on top of it. I’ve kept my examples to the most basic of web 
             implementations, and I haven’t touched on Javascript, animation, libraries, frameworks, pre-processors, 
-            package managers, automation, testing, or deployment. Whew.<br>
+            package managers, automation, testing, or deployment. Whew.<br><br>
             <span id="npm">simply npm your webpack via grunt with vue babel or bower to react asdfjkl;lkdhgxdlciuhw</span>
         </p>
-        <p>
+        </div>
+        <p id="together">
             All of that bundled together is the popular way to work in 2018. But other people’s toolchains are absolutely 
             inscrutable from the outside. Even getting started is touchy. Last month, I had to install a package manager 
             to install a package manager. That’s when I closed my laptop and slowly backed away from it. We’re a long 
@@ -232,10 +246,12 @@
             enough times by now, but it is interesting that so few are willing to commit to its opposite: “Go slow and fix 
             things.”
         </p>
-        <p class="blue">
+        <div class="blue">
         <span id="let">
             Let me show you a video about speed.<br>
         </span>
+        <table id="thta">
+            <th id="favorite">
             This has been my favorite internet discovery of the last few 
             months. I’ve watched it enough times to overthink it. See, the 
             rabbit doesn’t lose because he gets tired. He loses because he 
@@ -250,8 +266,10 @@
             properly built and intelligently formed. We need to create space 
             for complexity’s important sibling: nuance. Spaces without 
             nuance tend to gravitate towards stupidity. And as an American, I 
-            can tell you, there are no limits to the amount of damage that 
-            can be inflicted by that dangerous cocktail of fast-moving-stupid.<br><br>
+            can tell you, there are no limits to the amount of damage that can be inflicted by that dangerous cocktail 
+            </th>
+            <th id="can">
+            by that dangerous cocktail of fast-moving-stupid.<br><br>
             The web also needs diligent people so that the idea of what the 
             web is and what it does remains legible to everyone. This applies 
             to being able to read the systems and social environments the 
@@ -264,11 +282,14 @@
             works for us, because whether you are just out of school or have 
             twenty years of experience, you’ll eventually end up in the same 
             spot: your first year of making websites.
-        </p>
-        <p class="black">
-        <span id="response">
+            </th>
+        </table>
+    </div>
+        <div class="black">
+        <p id="response">
             Reading selection and response<br>
-        </span>
+        </p>
+        <p id="frank">
             Frank Chimero, a designer from Brooklyn, New York, gave a talk called 'Everything Easy is Hard Again' at two 
             conferences, one in Portugal in October 2017, and another in Berlin in February 2018. In his talk, he talked 
             about how making websites has become more complicated.<br><br>
@@ -286,51 +307,89 @@
             need to keep things clear and not make them too complicated. This way, the web can stay accessible for 
             everyone, including future generations.
         </p>
-        <h4>
+        </div>
+        <table id="lastta">
+        <tr>
+            <td></td>
+            <td>
+            <h4>
             How does the reading fit into the canon of design as a whole?
-        </h4>
-        <p>
+            </h4>
+            </td>
+            <td>
+            <p>
             The reading fits into the canon of design because it talks about how web 
             design is changing and how it affects designers. It shows that designers have a 
             hard time with the new complexities. Even though it's about web design, it also 
             presents ideas that can apply to design in general, emphasizing the 
             importance of keeping things simple.
-        </p>
-        <h4>
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+            <h4>
             Do you think the reading holds up to a contemporary practice of interaction design?
-        </h4>
-        <p>
+            </h4>
+            </td>
+            <td>
+            <p>
             Yes, the reading is good for today's interaction design. It shows how designers 
             deal with fast-changing tech and methods. It talks about keeping things simple 
             and clear, which is important for interaction design too.
-        </p>
-        <h4>
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+            <h4>
             What does the author succeed in conveying in this reading?
-        </h4>
-        <p>
+            </h4>
+            </td>
+            <td>
+            <p>
             The author does a good job of showing how designers feel when they find web 
             design is getting too hard. He also explains well why it's essential to keep things 
             simple. 
-        </p>
-        <h4>
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+            <h4>
             What do you strongly disagree 
             with in the reading?
-        </h4>
-        <p>
+            </h4>
+            </td>
+            <td>
+            <p>
             Although the author feels web design is getting harder, it might be because 
             web design is solving more complicated issues. You see, as web design 
             improves, more people want complex stuff.
-        </p>
-        <h4>
+            </p>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+            <h4>
             What did you learn from the 
             reading that impacted how you 
             will approach design?
-        </h4>
-        <p>
+            </h4>
+            </td>
+            <td>
+            <p>
             The reading says that in design, we should make things simple, easy to read, 
             and open to change. Designers should have a clear goal and avoid making 
             things too complicated. It also recommends that designers should follow the 
             web's natural ways and be straightforward.
-        </p>
+            </p>
+            </td>
+        </tr>
+    </table>
     </body>
 </html>

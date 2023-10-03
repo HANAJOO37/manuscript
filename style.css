@@ -13,23 +13,38 @@ header {
     background-color: #0500FF;
 }
 
-#right {
+.description{
     background-color: black;
+    padding: 40px;
+    margin-top: -160px;
+}
+
+ul{
+    list-style: none;
+}
+
+#right {
     color: white;
     text-align: right;
+    line-height: 24px;
 }
 
 #left {
-    background-color: black;
     color: white;
     font-family: 'Courier Prime';
     line-height: 24px;
+    float: left;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 .date{
     color: #FFF;
     font-size: 16px;
     line-height: 40px;
+    padding: 20px;
 }
 
 header h1{
@@ -39,6 +54,8 @@ header h1{
     font-size: 180px;
     line-height: 200px;
     text-align: right;
+    padding: 80px;
+    margin-top: -120px;
 }
 
 #easy {
@@ -50,10 +67,23 @@ header h1{
     font-family: Rubik Beastly;
     color: #FF6006;
     text-shadow: none;
+    font-weight: 400;
 }
 
 #title {
     font-weight: bold;
+}
+
+#summer {
+    padding: 40px;
+    margin-right: 25%;
+    margin-top: -20px;
+}
+
+#absence {
+    padding: 40px;
+    margin-left: 40%;
+    margin-top: -40px;
 }
 
 #things {
@@ -62,11 +92,25 @@ header h1{
     font-size: 48px;
     color: #0500FF;
     text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    margin-right: 4%;
+    margin-top: -20px;
+}
+
+#complexity {
+    padding: 40px;
+    margin-left: 40%;
+    margin-top: -40px;
 }
 
 .orange {
     background-color: #FF7B31;
     color: white;
+    padding: 40px;
+}
+
+.center {
+    margin-left: 13%;
+    margin-right: 13%;
 }
 
 #example {
@@ -74,6 +118,16 @@ header h1{
     font-size: 40px;
     color: #0500FF;
     text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
+    float: left;
+    line-height: 56px;
+    padding: 40px;
+    text-align: left;
+}
+
+#said {
+    font-weight: normal;
+    text-align: left;
+    padding: 40px;
 }
 
 .tag {
@@ -84,24 +138,79 @@ header h1{
 .black {
     background-color: rgba(0, 0, 0, 0.90);
     color: white;
+    padding: 40px;
+}
+
+#seta {
+    margin-top: -40px;
+}
+
+#first{
+    width: 10%;
 }
 
 #simple {
     font-family: 'Archivo Black';
     font-size: 32px;
     color: #0500FF;
-    text-shadow: -1px 0px black, 0px 1px black, 1px 0px black, 0px -1px black;
     line-height: 48px;
+    text-align: left;
+    margin-left: 30%;
+    vertical-align: top;
+    padding-top: 40px;
+}
+
+#all {
+    text-align: left;
+    font-weight: normal;
+    padding: 40px;
+    width: 48%;
+}
+
+#similar {
+    margin-left: 18%;
+}
+
+#directness {
+    padding: 40px;
+    margin-right: 25%;
 }
 
 #npm {
     font-style: italic;
     font-weight: bold;
+    text-align: center;
+}
+
+#together {
+    margin-left: 13%;
+    margin-right: 13%;
+    padding: 40px;
 }
 
 .blue {
     background-color: #0500FF;
     color: white;
+    padding: 40px;
+}
+
+#thta {
+    text-align: left;
+    margin-left: 16%;
+}
+
+#favorite{
+    font-weight: normal;
+    vertical-align: top;
+    padding: 20px;
+    width: 53%;
+}
+
+#can {
+    font-weight: normal;
+    vertical-align: top;
+    padding: 20px;
+    width: 52%;
 }
 
 #let {
@@ -118,8 +227,16 @@ header h1{
     line-height: 80px;
 }
 
+#frank{
+    margin-left: 30%;
+}
+
 h4 {
     font-family: 'Archivo Black';
     font-size: 24px;
     color: #0500FF;
+}
+
+#lastta{
+    padding: 40px;
 }

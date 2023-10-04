@@ -240,3 +240,18 @@ h4 {
 #lastta{
     padding: 40px;
 }
+
+.firsttd{
+    width: 10%;
+}
+
+.secondtd{
+    vertical-align: top;
+    padding: 10px;
+}
+
+.thirdtd{
+    padding: 20px;
+    vertical-align: top;
+    margin-top: -20px;
+}
